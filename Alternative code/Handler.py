@@ -2,9 +2,9 @@ import csv
 def writeReport(result):
 
     list1=[]
-
+    print("Connecting.....")
     for data in result:
-        datas = {}
+        print("Processing")
         for dataset in data['PriceHistory']:
             datas['product'] = data["productVariantId"]
             datas['effort'] = dataset['effort']
